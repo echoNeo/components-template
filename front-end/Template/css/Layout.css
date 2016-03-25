@@ -1,0 +1,112 @@
+/* Layout 是指整个网站的「大架构」的外观，而非 .button 这种小元件的 class。
+网站通常会有一些主要的大区块，可能是 header 或 footer，Layout 就是用来定义这些「大架构」的 CSS。
+如果有做 Responsive Web Design 或是用 Grid system，也是把规则写在 Layout 这里。
+
+以下这是个范例：
+
+#header { margin: 30px 0; }
+#articles-wrapper { ......; }
+.sidebar {
+  &.sidebar--right { ......; }
+  &.sidebar-left { ......; }
+}
+通常只有一个选择器，一个 id、或一个 class。
+
+*/
+
+
+/* #footer置底*/
+#wrap {
+  min-height: 100%;
+  position: relative;
+}
+#hd, #ft {
+  background-color: #ddd;
+  line-height: 50px;
+}
+#by {
+  padding-bottom: 50px;  /* 等于footer的高度 */
+  height: 100%;
+}
+#ft {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+}
+
+.inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: #999;
+  line-height: 30px;
+  height: 30px;
+  margin: 10px auto; 
+}
+
+/*右栏固定，左边自适应布局*/
+.main {
+  width: auto;
+  margin-right: 210px;
+}
+.right {
+  float: right;
+  width: 200px;
+  height: 500px;
+  background-color: #E8E8D0;
+}
+
+/*左右固定，中间自适应布局(float方法)*/
+.left, .right {
+  width: 200px;
+  height: 500px;
+  background-color: #ddd;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.main {
+  margin-right: 210px;
+  margin-left: 210px;
+  background-color: #E8E8D0;
+  height: 500px;
+}
+
+/*左右固定，中间自适应布局(方法)*/
+.content {            /*  需添加父容器content，包含left,right以及main   */
+  position: relative;
+  margin-bottom: 10px;
+}
+.left, .right {
+  width: 200px;
+  height: 500px;
+  background-color: #ddd;
+}
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main {
+  margin-right: 210px;
+  margin-left: 210px;
+  background-color: #E8E8D0;
+  height: 500px;
+}
+
+
+#meun {
+  margin-left: 0;
+  width: 80%;
+}

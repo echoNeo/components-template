@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>组件 | table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/Normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/Base.css">
+    <link rel="stylesheet" type="text/css" href="table.css">
+  </head>
+  <body>
+        <div id="table"> 
+          
+          <table width="100%" border="1">
+
+            <!-- 对齐 -->
+            <col align="left" />
+            <col align="left" />
+            <col align="right" />
+
+            <!-- 标签 -->
+            <caption>Monthly savings</caption>
+
+            <!-- 分组 -->
+            <colgroup span="2" align="left"></colgroup>
+            <colgroup align="right" style="color:#0000FF;"></colgroup>
+
+            <thead>
+              <tr>
+                <th>Month</th>
+                <th>Savings</th>
+              </tr>
+            </thead>
+
+            <tfoot>
+              <tr>
+                <td>Sum</td>
+                <td>$180</td>
+              </tr>
+            </tfoot>
+
+            <tbody>
+              <tr>
+                <td>January</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>February</td>
+                <td>$80</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+          
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="table.js"></script>
+  </body>
+</html>

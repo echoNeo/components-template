@@ -1,0 +1,5 @@
+/*  Theme 是画面上所有「主视觉」的定义，例如 border-color、background-image 或是 font-family 等相关的 Typography 设定。
+为什么说是「主视觉」？因为有些元件模组仍然是留在 Module 去定义，Theme 就像 Layout 一样负责「大架构」上的视觉样式。
+
+编者注 感谢 Only1Word 指出，theme 在 SMACSS 中更类似皮肤。*/
+

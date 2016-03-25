@@ -1,0 +1,10 @@
+#form {
+  margin: 100px auto;
+  width: 50%;
+}
+
+/*表单模块*/
+.form .row {
+  margin: 10px;
+  line-height: 50px;
+}

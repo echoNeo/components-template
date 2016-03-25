@@ -1,0 +1,19 @@
+/* State 负责定义元素不同的状态下，所呈现的样式。但是并非指一个元素的 :hover 或 :active 下的状态。
+举例来说，一个导航栏分页，目前所在页面的分页需要加上 .active 的属性表示目前位置是在这个分页，HTML 会长这样：
+
+<nav class="nav--main">
+  <ul>
+    <li><a>.........</a></li>
+    <li class="active"><a>.........</a></li>
+    <li><a>.........</a></li>
+  </ul>
+</nav>
+因此可以替 .nav–main 增加 .active 这样的子 class：
+
+.nav--main {
+  // others…;
+  .active {
+    background: darken($background-color, 16%);
+  }
+}
+有时候为了让阅读更贴近语义，会用比较友善的命名方式，以此段的范例来说， .is-active 就比 .active 来得好读。*/

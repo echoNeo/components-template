@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>组件 | form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/Normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/Base.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+  </head>
+  <body>
+        <div id="form"> 
+            <form name="input" action="#" method="get" class="form">
+              <fieldset>
+
+                <legend>health information</legend>
+
+                <!-- 单选 -->
+                <div class="row">
+                    <label for="female">Female</label>
+                    <input type="radio" name="sex" id="female" />
+                </div>
+
+                <!-- 多选 -->
+                <div class="row">
+                    <label for="bike">bike</label>
+                    <input type="checkbox" name="bike" id="bike">
+                    <label for="car">car</label>
+                    <input type="checkbox" name="car" id="car">
+                </div>
+
+                <!-- 文本 -->
+                <div class="row">
+                    <label for="fname">fname</label>
+                    <input type="text" name="fname" id="fname" />
+                </div>
+
+                <!-- 多行文本框 -->
+                <div class="row">
+                    <textarea rows="3" cols="20" placeholder="请输入文本"></textarea>
+                </div>
+
+                <!-- 下拉菜单 -->
+                <div class="row">
+                    <select>
+                     <optgroup label="Swedish Cars">   <!-- 组合选项 -->
+                        <option value ="volvo">Volvo</option>
+                        <option value ="saab">Saab</option>
+                      </optgroup>
+
+                      <optgroup label="German Cars">   <!-- 组合选项 -->
+                        <option value ="mercedes">Mercedes</option>
+                        <option value ="audi">Audi</option>
+                      </optgroup>
+                    </select>
+                </div>
+
+                <!-- 按钮 -->
+                <div class="row">
+                    <input type="submit" value="Submit" />
+                </div>
+
+              </fieldset>
+            </form>
+        </div>
+          
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+  </body>
+</html>

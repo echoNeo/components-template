@@ -1,0 +1,6 @@
+/*Partial 跟 Latout 不同，也跟 Module 不同，他比 Layout 的范围小，可能是 header 底下的某个子元素。他不像 Module，他是特定单一领域下特别的设定。
+
+.nav--main {
+  a { ......; }
+}
+通常会将 Partial 的名称加在子 class 作为 prefix，例如 .nav–main 底下的 .nav–main_item。*/
